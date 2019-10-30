@@ -87,7 +87,8 @@ header {
         }
 
         .cart-counter {
-          width: 28px;
+          min-width: 28px;
+          padding: 0 5px;
           height: 27px;
           border-radius: 14px;
           background-color: $header-bg;
