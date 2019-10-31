@@ -87,7 +87,8 @@ header {
         }
 
         .cart-counter {
-          width: 28px;
+          min-width: 28px;
+          padding: 0 5px;
           height: 27px;
           border-radius: 14px;
           background-color: $header-bg;
@@ -98,8 +99,8 @@ header {
           color: rgb(224, 227, 237);
           position: absolute;
           top: 50%;
-          right: 0;
-          transform: translate(50%, -50%);
+          left: 75%;
+          transform: translate(0%, -50%);
         }
 
         &:hover {
