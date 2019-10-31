@@ -1,5 +1,5 @@
 .product-box {
-  background-color: #ffffff;
+  background-color: $gen-white;
   border: 1px solid #e1e1e1;
   margin-bottom: 2rem;
 
@@ -22,12 +22,12 @@
       transform: translateX(-50%);
       background-color: #292929;
       border-radius: 50%;
-      color: #ffffff;
+      color: $gen-white;
       padding: 30px 15px 5px 15px;
     }
 
     .buttons {
-      display: flex;
+      visibility: hidden;
       justify-content: space-between;
     }
   }
@@ -78,5 +78,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &:hover .buttons {
+    visibility: visible;
+  }
+
+  &:hover .price > .btn-main-small {
+    background-color: $primary;
   }
 }
