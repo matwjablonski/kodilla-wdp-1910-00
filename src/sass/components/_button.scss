@@ -1,13 +1,13 @@
 .btn-main {
   background-color: #2a2a2a;
-  color: $btn-white;
+  color: $gen-white;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   padding: 10px 30px;
 
   &:not(.no-hover):hover {
-    color: $btn-white !important;
+    color: $gen-white !important;
     background-color: $primary;
     text-decoration: none;
   }
@@ -31,6 +31,6 @@
 
   &:hover {
     background-color: #2a2a2a;
-    color: $btn-white;
+    color: $gen-white;
   }
 }
