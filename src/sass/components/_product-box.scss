@@ -27,7 +27,7 @@
     }
 
     .buttons {
-      display: flex;
+      visibility: hidden;
       justify-content: space-between;
     }
   }
@@ -78,5 +78,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &:hover .buttons {
+    visibility: visible;
+  }
+
+  &:hover .price > .btn-main-small {
+    background-color: $primary;
   }
 }
