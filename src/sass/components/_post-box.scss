@@ -1,5 +1,17 @@
 .post-box {
   margin-bottom: 2rem;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    .post-info h5 {
+      color: $primary;
+    }
+    .post-info .btn-main {
+      background-color: $primary;
+    }
+  }
 
   .cover {
     padding: 70% 25px 0 25px;
@@ -21,10 +33,12 @@
 
       .date {
         text-align: left;
+        color: $text-color;
       }
 
       .comments {
         text-align: right;
+        color: $text-color;
       }
     }
   }
@@ -33,7 +47,7 @@
     padding: 25px;
 
     h5 {
-      color: $primary;
+      color: $text-color;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
