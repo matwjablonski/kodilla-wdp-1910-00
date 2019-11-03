@@ -3,8 +3,10 @@ const allStars = document.querySelectorAll('.stars');
 for (let i = 0; i < allStars.length; i++) {
   allStars[i].addEventListener('mouseover', function (e) {
     let action = 'add';
+    let action2 = 'remove';
     for (let element of this.children) {
       element.classList[action]('hover');
+      element.classList[action2]('full');
       if (element === e.target) action = 'remove';
     }
   });

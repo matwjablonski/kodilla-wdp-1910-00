@@ -62,6 +62,7 @@
       }
       & a.select {
         color: $primary;
+        @extend .fas;
       }
       a {
         text-decoration: none;
