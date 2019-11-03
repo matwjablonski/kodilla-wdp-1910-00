@@ -1,4 +1,4 @@
-let allStars = document.querySelectorAll('.stars');
+const allStars = document.querySelectorAll('.stars');
 
 for (let i = 0; i < allStars.length; i++) {
   allStars[i].addEventListener('mouseover', function (e) {
