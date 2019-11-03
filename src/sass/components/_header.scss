@@ -194,51 +194,52 @@ header {
               display: block;
             }
           }
-          .category-list-head ul {
-            overflow: visible;
-            position: absolute;
-            visibility: hidden;
-            top: 100%;
-            padding: 0;
-            background: $text-color;
-            text-align: center;
-            width: calc(100% + 2px);
-            cursor: pointer;
-            left: -1px;
-            z-index: 1;
-          }
-
-          .category-list-head li {
-            position: relative;
-            display: block;
-
-            i:first-child {
-              color: $primary;
-              left: 10px;
-              z-index: 0;
-              padding: 10px;
+          .category-list-head {
+            & ul {
+              overflow: visible;
+              position: absolute;
+              visibility: hidden;
+              top: 100%;
+              padding: 0;
+              background: $text-color;
+              text-align: center;
+              width: calc(100% + 2px);
+              cursor: pointer;
+              left: -1px;
+              z-index: 1;
             }
+            & li {
+              position: relative;
+              display: block;
 
-            i:nth-child(3) {
-              right: 10px;
-              z-index: 0;
-              padding: 10px;
-            }
-
-            &:hover li {
-              background: $header-bg;
-              border-bottom: 1px solid $gen-white;
-
-              &:hover a {
+              i:first-child {
                 color: $primary;
+                left: 10px;
+                z-index: 0;
+                padding: 10px;
               }
-              a {
-                color: $gen-white;
-                text-decoration: none;
+
+              i:nth-child(3) {
+                right: 10px;
+                z-index: 0;
+                padding: 10px;
               }
-            }
-            &:hover > ul {
-              visibility: visible;
+
+              &:hover li {
+                background: $header-bg;
+                border-bottom: 1px solid $gen-white;
+
+                &:hover a {
+                  color: $primary;
+                }
+                a {
+                  color: $gen-white;
+                  text-decoration: none;
+                }
+              }
+              &:hover > ul {
+                visibility: visible;
+              }
             }
           }
         }
