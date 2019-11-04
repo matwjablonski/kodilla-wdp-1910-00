@@ -124,6 +124,10 @@ header {
       display: flex;
       align-self: stretch;
 
+      .navbar-collapse {
+        align-items: stretch;
+      }
+
       ul {
         margin: 0;
         padding: 0;
@@ -151,10 +155,11 @@ header {
               background-color: $primary;
               color: #ffffff;
               border-color: $primary;
+              border-top: 4px solid $text-color;
             }
 
-            &.active {
-              border-color: $text-color;
+            @include media-breakpoint-down(sm) {
+              width: 100vw;
             }
           }
         }
@@ -221,5 +226,13 @@ header {
         }
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    position: absolute;
+    background: #ffffff;
+    z-index: 1000;
   }
 }
