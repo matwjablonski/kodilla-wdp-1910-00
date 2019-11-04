@@ -181,7 +181,7 @@ header {
           display: flex;
           align-items: center;
           height: 40px;
-          font-size: $search-input-font-size;
+          font-size: 14px;
           margin: 0;
           border: 0;
           .category-list-head,
@@ -253,7 +253,7 @@ header {
         input {
           border: 0;
           padding-left: 10px;
-          font-size: $search-input-font-size;
+          font-size: 14px;
           outline: none;
 
           &::placeholder {
