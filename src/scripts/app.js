@@ -1,7 +1,7 @@
 const allStars = document.querySelectorAll('.stars');
 
-for (let i = 0; i < allStars.length; i++) {
-  allStars[i].addEventListener('mouseover', function (e) {
+for (let x of allStars) {
+  x.addEventListener('mouseover', function (e) {
     let action = 'add';
     let action2 = 'remove';
     for (let element of this.children) {
@@ -12,8 +12,8 @@ for (let i = 0; i < allStars.length; i++) {
   });
 }
 
-for (let j = 0; j < allStars.length; j++) {
-  allStars[j].addEventListener('mouseout', function (e) {
+for (let y of allStars) {
+  y.addEventListener('mouseout', function (e) {
     let action = 'remove';
     for (let element of this.children) {
       element.classList[action]('hover');
@@ -22,8 +22,8 @@ for (let j = 0; j < allStars.length; j++) {
   });
 }
 
-for (let k = 0; k < allStars.length; k++) {
-  allStars[k].addEventListener('click', function (e) {
+for (let z of allStars) {
+  z.addEventListener('click', function (e) {
     let action = 'add';
     for (let element of this.children) {
       element.classList[action]('select', 'full');
