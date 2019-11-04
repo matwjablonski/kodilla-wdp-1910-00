@@ -1,0 +1,4 @@
+.hover-placeholder {
+  transition: color $hover-color-trans $hover-effect,
+    background-color $hover-bg-color-trans $hover-effect;
+}
