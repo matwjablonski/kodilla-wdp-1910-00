@@ -79,11 +79,17 @@
     align-items: center;
   }
 
-  &:hover .buttons {
+  &:hover {
+    @extend .hover-placeholder;
+  }
+  .buttons {
     visibility: visible;
   }
 
-  &:hover .price > .btn-main-small {
+  &:hover {
+    @extend .hover-placeholder;
+  }
+  .price > .btn-main-small {
     background-color: $primary;
   }
 }
