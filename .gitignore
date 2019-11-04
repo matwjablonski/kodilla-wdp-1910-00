@@ -2,7 +2,7 @@
 dist/
 
 src/sass/bootstrap/
-src/sass/fontawsome/
+src/sass/fontawesome/
 src/sass/style.css
 src/sass/style.css.map
 # Created by https://www.gitignore.io/api/node
