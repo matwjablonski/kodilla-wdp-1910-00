@@ -48,18 +48,6 @@
       font-weight: 300;
     }
   }
-
-  &.active {
-    i {
-      background-color: $primary;
-      color: $gen-white;
-      border-color: $primary;
-    }
-
-    .content {
-      color: $primary;
-    }
-  }
 }
 
 @media (max-width: 576px) {
