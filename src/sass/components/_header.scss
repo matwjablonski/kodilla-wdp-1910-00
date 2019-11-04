@@ -119,7 +119,7 @@ header {
     background-color: #ffffff;
 
     .container > .row {
-      min-height: 84px;
+      height: 84px;
     }
 
     .menu {
@@ -128,6 +128,10 @@ header {
 
       .navbar-collapse {
         align-items: stretch;
+      }
+
+      .navbar-toggler {
+        border: none;
       }
 
       ul {
@@ -162,10 +166,6 @@ header {
               color: #ffffff;
               border-color: $primary;
               border-top: 4px solid $text-color;
-            }
-
-            @include media-breakpoint-down(sm) {
-              width: 100vw;
             }
           }
         }
@@ -219,6 +219,7 @@ header {
           padding-left: 10px;
           font-size: 14px;
           outline: none;
+          width: 100%;
 
           &::placeholder {
             color: $text-color;
@@ -235,10 +236,45 @@ header {
   }
 }
 
-@media (max-width: 767px) {
-  .navbar-nav {
-    position: absolute;
-    background: #ffffff;
-    z-index: 1000;
+@media (max-width: $sm) {
+  header {
+    .menu-bar {
+      .search-form {
+        .category {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  header {
+    .navbar-nav {
+      position: absolute;
+      background: #ffffff;
+      z-index: 1000;
+      transform: translate(0px, 84px);
+
+      li {
+        a {
+          width: 75vw;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $xl) {
+  header {
+    .menu-bar {
+      .search-products {
+        padding-left: 0;
+      }
+
+      .container > .row {
+        height: 99px;
+      }
+    }
   }
 }
