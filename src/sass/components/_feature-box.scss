@@ -11,7 +11,7 @@
       height: 60px;
       border-radius: 100%;
       position: relative;
-      color: $text-color;
+      color: $gen-black;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -28,7 +28,7 @@
       width: 76px;
       height: 76px;
       border-radius: 100%;
-      background-color: #ffffff;
+      background-color: $gen-white;
       z-index: -1;
     }
   }
@@ -52,7 +52,7 @@
   &.active {
     i {
       background-color: $primary;
-      color: #ffffff;
+      color: $gen-white;
       border-color: $primary;
     }
 
