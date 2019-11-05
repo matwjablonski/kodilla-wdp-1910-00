@@ -1,0 +1,119 @@
+.section--gallery {
+  .tabs-products {
+    border: 1px solid $feature-box-border-color;
+    .tabs-product {
+      text-transform: uppercase;
+      font-weight: 500;
+      .nav-tabs {
+        .nav-item {
+          .nav-link {
+            color: $text-color;
+          }
+          .active {
+            color: $primary;
+            border-top: 3px solid $primary;
+            background-color: $gallery-background-color;
+          }
+        }
+      }
+    }
+    .selected-product {
+      background-color: $gallery-background-color;
+      img {
+        width: 100%;
+      }
+      .actions {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        .outlines {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .label-product {
+        position: absolute;
+        right: 7%;
+        bottom: 10%;
+        box-shadow: 0 3px 6px rgba(1, 2, 2, 0.24);
+        background-color: $gen-white;
+        padding: 10px 25px;
+        .price-product {
+          position: absolute;
+          transform: translate(67%, -100%);
+          border-radius: 50%;
+          color: $gen-white;
+          background-color: #000000;
+          opacity: 0.5;
+          width: 100px;
+          height: 100px;
+          text-align: center;
+          p:nth-child(2) {
+            text-decoration: line-through;
+          }
+        }
+        .stars {
+          a {
+            text-decoration: none;
+            color: rgb(42, 42, 42);
+            @extend .far;
+            @extend .fa-star;
+
+            &.full {
+              @extend .fas;
+            }
+          }
+        }
+      }
+    }
+    .thumbnails-products {
+      .gallery-slider {
+        border: 1px solid $gallery-background-color;
+        background-color: $gallery-background-color;
+        margin: 5px;
+        .slider-image {
+          img {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .featured-product {
+    position: relative;
+    background-color: $gallery-background-color;
+    overflow: hidden;
+    img {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .product-info {
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      text-transform: uppercase;
+      span {
+        color: $gallery-color-green;
+        font-size: 34px;
+        font-weight: 600;
+      }
+      .name-product {
+        color: $primary;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+      }
+      .btn-gallery-shopnow {
+        text-decoration: none;
+        color: $gen-white;
+        border: 1px solid $gallery-color-green;
+        background-color: $gallery-color-green;
+        border-radius: 5px;
+        padding: 10px 13px;
+      }
+    }
+  }
+}
