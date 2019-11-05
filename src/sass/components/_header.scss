@@ -48,7 +48,12 @@ header {
       height: 145px;
     }
 
+    .logo {
+      text-align: center;
+    }
+
     .phone-number {
+      text-align: left;
       p {
         margin: 0;
         font-size: 17px;
@@ -224,6 +229,41 @@ header {
           border: 0;
           background-color: transparent;
           outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  header {
+    .top-bar {
+      .text-right {
+        padding-left: 0;
+        li {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .company-claim {
+      .logo {
+        text-align: left;
+      }
+
+      .cart {
+        transform: translate(0px, -12px);
+      }
+
+      .phone-number {
+        order: 10;
+        min-width: 100%;
+        text-align: right;
+
+        p {
+          font-size: 14px;
         }
       }
     }
