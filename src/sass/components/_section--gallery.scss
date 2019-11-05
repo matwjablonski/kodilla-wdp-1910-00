@@ -38,12 +38,13 @@
         box-shadow: 0 3px 6px rgba(1, 2, 2, 0.24);
         background-color: $gen-white;
         padding: 10px 25px;
+
         .price-product {
           position: absolute;
           transform: translate(67%, -100%);
           border-radius: 50%;
           color: $gen-white;
-          background-color: #000000;
+          background-color: $black;
           opacity: 0.5;
           width: 100px;
           height: 100px;
@@ -52,6 +53,27 @@
             text-decoration: line-through;
           }
         }
+
+        .corner {
+          position: absolute;
+          width: $cornerSize;
+          height: $cornerSize;
+
+          &.tl {
+            left: 0;
+            top: 0;
+            border-top: $cornerSize solid $black;
+            border-right: $cornerSize solid transparent;
+          }
+
+          &.br {
+            right: 0;
+            bottom: 0;
+            border-bottom: $cornerSize solid $black;
+            border-left: $cornerSize solid transparent;
+          }
+        }
+
         .stars {
           a {
             text-decoration: none;
