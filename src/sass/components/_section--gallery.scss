@@ -74,18 +74,7 @@
           }
         }
 
-        .stars {
-          a {
-            text-decoration: none;
-            color: rgb(42, 42, 42);
-            @extend .far;
-            @extend .fa-star;
-
-            &.full {
-              @extend .fas;
-            }
-          }
-        }
+        @include stars;
       }
     }
     .thumbnails-products {
