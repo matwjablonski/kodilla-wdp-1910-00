@@ -1,21 +1,14 @@
-$screen-sm: 600px;
+$screen-sm: 576px;
 
-// Small screen / tablet
 $screen-md: 768px;
 
-// Medium screen / desktop
 $screen-lg: 992px;
 
-// Large screen / wide desktop
 $screen-xl: 1200px;
 
-// So media queries don't overlap when required, provide a maximum
 $screen-sm-max: ($screen-md - 1);
 $screen-md-max: ($screen-lg - 1);
 $screen-lg-max: ($screen-xl - 1);
-
-// respond-to()
-// ------------
 
 @mixin respond-to($media) {
   @if $media == sm {
@@ -35,4 +28,11 @@ $screen-lg-max: ($screen-xl - 1);
       @content;
     }
   }
+}
+
+@mixin flex-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

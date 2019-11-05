@@ -4,16 +4,40 @@ footer {
     padding: 3rem 0;
 
     .menu-wrapper {
+      &-image {
+        @include respond-to(md) {
+          display: flex;
+          justify-content: center;
+        }
+        @include respond-to(sm) {
+          display: flex;
+          justify-content: center;
+        }
+      }
       h6 {
         color: #ffffff;
         text-transform: uppercase;
         margin: 0 0 1rem 0;
+        @include respond-to(md) {
+          @include flex-footer;
+        }
+        @include respond-to(sm) {
+          @include flex-footer;
+        }
       }
 
       ul {
         margin: 0 0 1.5rem 0;
         padding: 0;
         list-style: none;
+        @include respond-to(md) {
+          @include flex-footer;
+          text-align: left;
+        }
+        @include respond-to(sm) {
+          @include flex-footer;
+          text-align: left;
+        }
         li {
           a {
             font-size: 14px;
@@ -52,6 +76,18 @@ footer {
         color: rgb(169, 169, 169);
         font-size: 14px;
         line-height: 26px;
+        text-align: center;
+        @include respond-to(md) {
+          text-align: left;
+        }
+        @include respond-to(sm) {
+          text-align: left;
+        }
+        span {
+          @include respond-to(sm) {
+            display: block;
+          }
+        }
       }
     }
 
@@ -64,7 +100,9 @@ footer {
         li {
           display: inline-block;
           margin-left: 1rem;
-
+          @include respond-to(sm) {
+            margin-left: 0.5rem;
+          }
           a {
             color: rgb(169, 169, 169);
             text-decoration: none;
