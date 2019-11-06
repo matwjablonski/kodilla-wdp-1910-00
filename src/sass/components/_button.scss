@@ -7,6 +7,7 @@
   padding: 10px 30px;
 
   &:not(.no-hover):hover {
+    @extend .hover-placeholder;
     color: $gen-white !important;
     background-color: $primary;
     text-decoration: none;
@@ -30,7 +31,10 @@
   line-height: 22px;
 
   &:hover {
+
+    @extend .hover-placeholder;
     background-color: $gen-black;
+
     color: $gen-white;
   }
 }

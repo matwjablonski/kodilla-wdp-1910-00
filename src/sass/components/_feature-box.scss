@@ -1,5 +1,5 @@
 .feature-box {
-  border: 1px solid #b6b6b6;
+  border: 1px solid $feature-box-border-color;
   text-align: center;
   margin-top: 40px;
 
@@ -15,12 +15,12 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #b6b6b6;
+      border: 1px solid $feature-box-border-color;
     }
 
     &::before {
       content: "";
-      border: 1px solid #b6b6b6;
+      border: 1px solid $feature-box-border-color;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -49,6 +49,7 @@
     }
   }
 
+
   &.active {
     i {
       background-color: $primary;
@@ -60,4 +61,5 @@
       color: $primary;
     }
   }
+
 }
