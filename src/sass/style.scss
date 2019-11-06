@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "hover-config";
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 @import "bootstrap/bootstrap.scss";
@@ -8,6 +8,7 @@
 @import "fontawesome/brands";
 @import "fontawesome/regular";
 
+@import "components/hover-placeholder";
 @import "components/header";
 @import "components/footer";
 @import "components/helpers";
