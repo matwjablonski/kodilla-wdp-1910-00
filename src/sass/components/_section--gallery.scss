@@ -1,6 +1,7 @@
 .section--gallery {
   .tabs-products {
     border: 1px solid $border-color-box;
+
     .tabs-product {
       text-transform: uppercase;
       font-weight: 500;
@@ -9,12 +10,14 @@
           .nav-link {
             color: $text-color;
             border-bottom: 0;
+
             &:hover {
               color: $primary;
               border-top: 3px solid $primary;
               background-color: $gallery-background-color;
             }
           }
+
           & .active {
             color: $primary;
             border-top: 3px solid $primary;
@@ -23,19 +26,24 @@
         }
       }
     }
+
     .selected-product {
       background-color: $gallery-background-color;
+
       img {
         width: 100%;
         padding: 50px;
       }
+
       .actions {
         position: absolute;
         top: 40%;
         left: 5%;
+
         .outlines {
           display: flex;
           flex-direction: column;
+
           .btn-outline:hover {
             border: 1px solid $primary;
             background-color: $gallery-background-color;
@@ -43,6 +51,7 @@
           }
         }
       }
+
       .label-product {
         position: absolute;
         right: 25px;
@@ -69,12 +78,14 @@
 
           p {
             margin: 0;
+
             span {
               text-decoration: line-through;
               font-size: 0.8rem;
             }
           }
         }
+
         .corner {
           position: absolute;
           width: $cornerSize;
@@ -97,28 +108,33 @@
         @include stars;
       }
     }
+
     .thumbnails-products {
       display: flex;
       flex-wrap: wrap;
       align-content: center;
       align-items: center;
       justify-content: center;
+
       .gallery-item {
         position: relative;
         background-color: $gallery-background-color;
         margin: 5px;
         height: 60px;
         overflow: hidden;
+
         &.gallery-arrow {
+          flex-grow: 0;
+          background-color: #292929;
+
           i {
             color: $gen-white;
             line-height: 60px;
             position: absolute;
             left: 12px;
           }
-          flex-grow: 0;
-          background-color: #292929;
         }
+
         img {
           height: 100%;
           width: 100%;
@@ -128,31 +144,37 @@
       }
     }
   }
+
   .featured-product {
     position: relative;
     background-color: $gallery-background-color;
     overflow: hidden;
+
     img {
       position: absolute;
       bottom: 0;
       width: 100%;
     }
+
     .product-info {
       position: absolute;
       top: 10%;
       left: 10%;
       text-transform: uppercase;
+
       span {
         color: $gallery-color-green;
         font-size: 34px;
         font-weight: 600;
       }
+
       .name-product {
         color: $primary;
         font-weight: 600;
         text-transform: capitalize;
         margin-bottom: 30px;
       }
+
       .btn-gallery-shopnow {
         text-decoration: none;
         color: $gen-white;
