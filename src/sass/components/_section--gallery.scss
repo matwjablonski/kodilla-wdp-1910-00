@@ -8,8 +8,14 @@
         .nav-item {
           .nav-link {
             color: $text-color;
+            border-bottom: 0;
+            &:hover {
+              color: $primary;
+              border-top: 3px solid $primary;
+              background-color: $gallery-background-color;
+            }
           }
-          .active {
+          & .active {
             color: $primary;
             border-top: 3px solid $primary;
             background-color: $gallery-background-color;
@@ -21,6 +27,7 @@
       background-color: $gallery-background-color;
       img {
         width: 100%;
+        padding: 50px;
       }
       .actions {
         position: absolute;
@@ -29,12 +36,17 @@
         .outlines {
           display: flex;
           flex-direction: column;
+          .btn-outline:hover {
+            border: 1px solid $primary;
+            background-color: $gallery-background-color;
+            color: $primary;
+          }
         }
       }
       .label-product {
         position: absolute;
-        right: 7%;
-        bottom: 10%;
+        right: 25px;
+        bottom: 90px;
         box-shadow: 0 3px 6px rgba(1, 2, 2, 0.24);
         background-color: $gen-white;
         padding: 10px 25px;
@@ -63,7 +75,6 @@
             }
           }
         }
-
         .corner {
           position: absolute;
           width: $cornerSize;
@@ -83,25 +94,40 @@
             border-left: $cornerSize solid transparent;
           }
         }
-
         @include stars;
       }
     }
     .thumbnails-products {
-      .gallery-slider {
-        border: 1px solid $gallery-background-color;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      .gallery-item {
+        position: relative;
         background-color: $gallery-background-color;
         margin: 5px;
-        .slider-image {
-          img {
-            max-width: 100%;
-            max-height: 100%;
+        height: 60px;
+        overflow: hidden;
+        &.gallery-arrow {
+          i {
+            color: $gen-white;
+            line-height: 60px;
+            position: absolute;
+            left: 12px;
           }
+          flex-grow: 0;
+          background-color: #292929;
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          left: 1%;
         }
       }
     }
   }
-
   .featured-product {
     position: relative;
     background-color: $gallery-background-color;
