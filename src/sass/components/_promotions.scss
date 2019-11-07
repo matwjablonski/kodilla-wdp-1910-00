@@ -1,27 +1,23 @@
 #leftPromo {
   height: 27vh;
   background-image: url("../images/promoLeft.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #promoRightUp {
   height: 13.5vh;
   background-image: url("../images/promoRightUp.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 #promoRightBottom {
   height: 13.5vh;
   background-image: url("../images/promoRightBottom.jpg");
+}
+
+.promo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-.promoUp {
+.promo-up {
   h5 {
     padding-top: 5%;
     color: $gen-black !important;
@@ -36,7 +32,7 @@
   }
 }
 
-.promoBottom {
+.promo-bottom {
   background-color: #f5efe8;
   h4 {
     padding-top: 15%;
