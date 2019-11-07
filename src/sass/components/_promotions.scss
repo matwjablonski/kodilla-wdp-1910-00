@@ -1,13 +1,13 @@
-#leftPromo {
+.left-promo {
   height: 27vh;
   background-image: url("../images/promoLeft.jpg");
 }
 
-#promoRightUp {
+.promo-right-up {
   height: 13.5vh;
   background-image: url("../images/promoRightUp.jpg");
 }
-#promoRightBottom {
+.promo-right-bottom {
   height: 13.5vh;
   background-image: url("../images/promoRightBottom.jpg");
 }
@@ -33,7 +33,7 @@
 }
 
 .promo-bottom {
-  background-color: #f5efe8;
+  background-color: $beige-std;
   h4 {
     padding-top: 15%;
     font-size: 1.45rem;
