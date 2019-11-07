@@ -41,8 +41,39 @@
       line-height: 24px;
       letter-spacing: 1px;
     }
+    .stars2 {
+      a {
+        color: $primary;
+        text-decoration: none;
+        @extend .far;
+        @extend .fa-star;
 
-    @include stars;
+        &.full {
+          @extend .fas;
+        }
+      }
+    }
+
+    .stars {
+      & a.hover {
+        color: $primary;
+        @extend .fas;
+      }
+      & a.select {
+        color: $primary;
+        @extend .fas;
+      }
+      a {
+        text-decoration: none;
+        color: rgb(42, 42, 42);
+        @extend .far;
+        @extend .fa-star;
+
+        &.full {
+          @extend .fas;
+        }
+      }
+    }
   }
 
   .line {
