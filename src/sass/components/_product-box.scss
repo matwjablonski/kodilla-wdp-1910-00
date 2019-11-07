@@ -5,7 +5,6 @@
 
   .photo {
     position: relative;
-    padding: 80% 10px 0 10px;
     background: {
       color: #f4f5f7;
       size: contain;
@@ -42,8 +41,28 @@
       line-height: 24px;
       letter-spacing: 1px;
     }
+    .stars2 {
+      a {
+        color: $primary;
+        text-decoration: none;
+        @extend .far;
+        @extend .fa-star;
+
+        &.full {
+          @extend .fas;
+        }
+      }
+    }
 
     .stars {
+      & a.hover {
+        color: $primary;
+        @extend .fas;
+      }
+      & a.select {
+        color: $primary;
+        @extend .fas;
+      }
       a {
         text-decoration: none;
         color: rgb(42, 42, 42);
@@ -80,11 +99,17 @@
     align-items: center;
   }
 
-  &:hover .buttons {
+  &:hover {
+    @extend .hover-placeholder;
+  }
+  .buttons {
     visibility: visible;
   }
 
-  &:hover .price > .btn-main-small {
+  &:hover {
+    @extend .hover-placeholder;
+  }
+  .price > .btn-main-small {
     background-color: $primary;
   }
 }

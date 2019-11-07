@@ -12,10 +12,11 @@ header {
         line-height: 55px;
 
         a {
-          color: #ffffff;
+          color: $gen-white;
           font-size: 13px;
 
           &:hover {
+            @extend .hover-placeholder;
             color: $primary;
             text-decoration: none;
           }
@@ -69,7 +70,7 @@ header {
       .cart-box {
         display: inline-block;
         position: relative;
-        color: #ffffff;
+        color: $gen-white;
 
         .cart-icon {
           background-color: $primary;
@@ -104,6 +105,7 @@ header {
         }
 
         &:hover {
+          @extend .hover-placeholder;
           .cart-icon {
             background-color: lighten($primary, 10%);
           }
@@ -114,7 +116,7 @@ header {
 
   .menu-bar {
     box-shadow: 2px 3.464px 6px rgba(1, 2, 2, 0.2);
-    background-color: #ffffff;
+    background-color: $gen-white;
 
     .container > .row {
       height: 84px;
@@ -135,26 +137,30 @@ header {
           align-items: stretch;
 
           a {
-            color: $text-color;
+            color: $gen-black;
             text-transform: uppercase;
             font-size: 12px;
             padding: 1rem;
             text-decoration: none;
             display: flex;
             align-items: center;
-            border-top: 4px solid #ffffff;
+            border-top: 4px solid $gen-white;
             font-weight: 500;
             letter-spacing: 1px;
+
+            &:hover {
+              @extend .hover-placeholder;
+            }
 
             &:hover,
             &.active {
               background-color: $primary;
-              color: #ffffff;
+              color: $gen-white;
               border-color: $primary;
             }
 
             &.active {
-              border-color: $text-color;
+              border-color: $gen-black;
             }
           }
         }
@@ -165,36 +171,85 @@ header {
       border: 1px solid $form-border-color;
       display: inline-flex;
       height: 45px;
-      color: $text-color;
+
+      color: $gen-black;
+
+      position: relative;
 
       .category {
         border-right: 1px solid $form-border-color;
         display: flex;
         align-items: center;
         position: relative;
+        cursor: pointer;
 
-        i:first-child {
-          color: $primary;
-          position: absolute;
-          left: 10px;
-          z-index: 0;
-        }
-
-        i:last-child {
-          position: absolute;
-          right: 10px;
-          z-index: 0;
-        }
-
-        select {
-          -webkit-appearance: none;
-          border: 0;
-          background-color: transparent;
-          outline: none;
-          padding: 5px 30px 5px 35px;
+        &-cointainer {
+          font-family: "PT Sans", sans-serif;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          height: 40px;
           font-size: 14px;
-          position: relative;
-          z-index: 1;
+          margin: 0;
+          border: 0;
+          .category-list-head,
+          .category-list-head li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            line-height: 43px;
+            li {
+              display: block;
+            }
+          }
+          .category-list-head {
+            & ul {
+              overflow: visible;
+              position: absolute;
+              visibility: hidden;
+              top: 100%;
+              padding: 0;
+              background: $gen-black;
+              text-align: center;
+              width: calc(100% + 2px);
+              cursor: pointer;
+              left: -1px;
+              z-index: 1;
+            }
+            & li {
+              position: relative;
+              display: block;
+
+              i:first-child {
+                color: $primary;
+                left: 10px;
+                z-index: 0;
+                padding: 10px;
+              }
+
+              i:nth-child(3) {
+                right: 10px;
+                z-index: 0;
+                padding: 10px;
+              }
+
+              &:hover li {
+                background: $header-bg;
+                border-bottom: 1px solid $gen-white;
+
+                &:hover a {
+                  color: $primary;
+                }
+                a {
+                  color: $gen-white;
+                  text-decoration: none;
+                }
+              }
+              &:hover > ul {
+                visibility: visible;
+              }
+            }
+          }
         }
       }
 
@@ -210,7 +265,7 @@ header {
           outline: none;
 
           &::placeholder {
-            color: $text-color;
+            color: $gen-black;
           }
         }
 

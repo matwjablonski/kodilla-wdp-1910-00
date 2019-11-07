@@ -1,5 +1,5 @@
 .btn-main {
-  background-color: #2a2a2a;
+  background-color: $gen-black;
   color: $gen-white;
   font-size: 16px;
   line-height: 24px;
@@ -7,7 +7,9 @@
   padding: 10px 30px;
 
   &:not(.no-hover):hover {
+    @extend .hover-placeholder;
     color: $gen-white !important;
+
     background-color: $primary;
     text-decoration: none;
   }
@@ -24,13 +26,19 @@
 .btn-outline {
   display: inline-block;
   padding: 5px 10px;
-  border: 1px solid #2a2a2a;
-  color: #2a2a2a;
+  border: 1px solid $gen-black;
+  color: $gen-black;
   font-size: 13px;
   line-height: 22px;
 
   &:hover {
-    background-color: #2a2a2a;
+    @extend .hover-placeholder;
+    background-color: $gen-black;
+
+    color: $gen-white;
+  }
+  &.active {
+    background-color: $primary;
     color: $gen-white;
   }
 }
