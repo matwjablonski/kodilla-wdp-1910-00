@@ -165,7 +165,7 @@ header {
               background-color: $primary;
               color: $gen-white;
               border-color: $primary;
-              border-top: 4px solid $text-color;
+              border-top: 4px solid $gen-black;
             }
           }
         }
@@ -189,6 +189,7 @@ header {
         &-cointainer {
           font-family: "PT Sans", sans-serif;
           width: 100%;
+          min-width: 171px;
           display: flex;
           align-items: center;
           height: 40px;
