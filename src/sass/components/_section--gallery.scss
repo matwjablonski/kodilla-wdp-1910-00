@@ -8,7 +8,7 @@
       .nav-tabs {
         .nav-item {
           .nav-link {
-            color: $text-color;
+            color: $gen-black;
             border-bottom: 0;
 
             &:hover {
@@ -70,7 +70,7 @@
           transform: translate(30%, -100%);
           border-radius: 50%;
           color: $gen-white;
-          background-color: #292929;
+          background-color: $form-border-color;
           opacity: 0.9;
           width: 100px;
           height: 100px;
@@ -94,14 +94,14 @@
           &.tl {
             left: 0;
             top: 0;
-            border-top: $cornerSize solid $black;
+            border-top: $cornerSize solid $gen-black;
             border-right: $cornerSize solid transparent;
           }
 
           &.br {
             right: 0;
             bottom: 0;
-            border-bottom: $cornerSize solid $black;
+            border-bottom: $cornerSize solid $gen-black;
             border-left: $cornerSize solid transparent;
           }
         }
@@ -122,10 +122,16 @@
         margin: 5px;
         height: 60px;
         overflow: hidden;
+        opacity: 0.5;
+
+        &.gallery-arrow,
+        &.active {
+          opacity: 1;
+        }
 
         &.gallery-arrow {
           flex-grow: 0;
-          background-color: #292929;
+          background-color: $form-border-color;
 
           i {
             color: $gen-white;

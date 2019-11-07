@@ -1,6 +1,14 @@
 @mixin stars {
-  .stars {
-    text-align: center;
+  .stars,
+  .stars2 {
+    & a.hover {
+      color: $primary;
+      @extend .fas;
+    }
+    & a.select {
+      color: $primary;
+      @extend .fas;
+    }
     a {
       text-decoration: none;
       color: rgb(42, 42, 42);
@@ -10,6 +18,12 @@
       &.full {
         @extend .fas;
       }
+    }
+  }
+
+  .stars2 {
+    a {
+      color: $primary;
     }
   }
 }
