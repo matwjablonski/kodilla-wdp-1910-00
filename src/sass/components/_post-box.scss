@@ -1,5 +1,18 @@
 .post-box {
   margin-bottom: 2rem;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    .post-info .blog-header {
+      color: $primary;
+    }
+    .post-info .btn-main {
+      background-color: $primary;
+    }
+  }
 
   .cover {
     background: {
@@ -20,10 +33,12 @@
 
       .date {
         text-align: left;
+        color: $text-color;
       }
 
       .comments {
         text-align: right;
+        color: $text-color;
       }
     }
   }
@@ -31,8 +46,8 @@
   .post-info {
     padding: 25px;
 
-    h5 {
-      color: $primary;
+    .blog-header {
+      color: $text-color;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
