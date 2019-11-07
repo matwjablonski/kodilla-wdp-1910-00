@@ -176,7 +176,6 @@ header {
 
       position: relative;
 
-
       .category {
         border-right: 1px solid $form-border-color;
         display: flex;
@@ -210,7 +209,7 @@ header {
               visibility: hidden;
               top: 100%;
               padding: 0;
-              background: $text-color;
+              background: $gen-black;
               text-align: center;
               width: calc(100% + 2px);
               cursor: pointer;

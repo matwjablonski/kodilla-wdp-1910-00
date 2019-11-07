@@ -33,12 +33,12 @@
 
       .date {
         text-align: left;
-        color: $text-color;
+        color: $gen-black;
       }
 
       .comments {
         text-align: right;
-        color: $text-color;
+        color: $gen-black;
       }
     }
   }
@@ -47,7 +47,7 @@
     padding: 25px;
 
     .blog-header {
-      color: $text-color;
+      color: $gen-black;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 1px;
