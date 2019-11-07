@@ -11,7 +11,7 @@
       height: 60px;
       border-radius: 100%;
       position: relative;
-      color: $text-color;
+      color: $gen-black;
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -48,6 +48,20 @@
       font-weight: 300;
     }
   }
+
+
+  &.active {
+    i {
+      background-color: $primary;
+      color: $gen-white;
+      border-color: $primary;
+    }
+
+    .content {
+      color: $primary;
+    }
+  }
+
 }
 
 @media (max-width: 576px) {
