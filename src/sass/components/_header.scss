@@ -287,9 +287,16 @@ header {
 @media (max-width: $sm) {
   header {
     .top-bar {
+      .text-left {
+        ul li {
+          margin-right: 0.3rem;
+        }
+      }
+
       .text-right {
         padding-left: 0;
-        li {
+        ul li {
+          margin-left: 0.3rem;
           span {
             display: none;
           }
