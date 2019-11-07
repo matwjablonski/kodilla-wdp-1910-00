@@ -49,3 +49,9 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .feature-box {
+    min-height: 142px;
+  }
+}
