@@ -342,7 +342,7 @@ header {
   }
 }
 
-@media (max-width: $md) {
+@media (max-width: $screen-md) {
   header {
     .navbar-nav {
       position: absolute;
@@ -359,7 +359,7 @@ header {
   }
 }
 
-@media (min-width: $md) and (max-width: $xl) {
+@media (min-width: $screen-md) and (max-width: $screen-xl) {
   header {
     .menu-bar {
       .search-products {
