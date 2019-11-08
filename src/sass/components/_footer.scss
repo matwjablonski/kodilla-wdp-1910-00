@@ -6,12 +6,10 @@ footer {
     .menu-wrapper {
       &-image {
         @include respond-to(md) {
-          display: flex;
-          justify-content: center;
+          @include flex-center;
         }
         @include respond-to(sm) {
-          display: flex;
-          justify-content: center;
+          @include flex-center;
         }
       }
       h6 {
