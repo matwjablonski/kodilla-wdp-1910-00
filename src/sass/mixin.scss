@@ -1,0 +1,26 @@
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media (max-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+      @content;
+    }
+  } @else if $media == xl {
+    @media (min-width: $screen-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin flex-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
