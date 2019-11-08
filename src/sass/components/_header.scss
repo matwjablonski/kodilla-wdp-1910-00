@@ -131,8 +131,10 @@ header {
       display: flex;
       align-self: stretch;
 
-      .navbar-collapse {
-        align-items: stretch;
+      .menu-rolled {
+        &.navbar-collapse {
+          align-items: stretch;
+        }
       }
 
       .navbar-toggler {
@@ -274,7 +276,7 @@ header {
           font-size: 14px;
           outline: none;
           -moz-outline: none;
-          width: 100%;
+          width: 90%;
 
           &::placeholder {
             color: $gen-black;
@@ -344,15 +346,33 @@ header {
 
 @media (max-width: $screen-md) {
   header {
-    .navbar-nav {
-      position: absolute;
-      background: $gen-white;
-      z-index: 1000;
-      transform: translate(0px, 84px);
+    .menu-bar {
+      .menu-rolled {
+        height: 84px !important;
+      }
+      .navbar-nav {
+        position: absolute;
+        background: $gen-white;
+        z-index: 1000;
+        transform: translate(0px, 84px);
 
-      li {
-        a {
-          width: 75vw;
+        li {
+          a {
+            width: 75vw;
+          }
+        }
+      }
+
+      .search-form {
+        .category-cointainer {
+          .category-list-head {
+            & li {
+              i:first-child,
+              i:nth-child(3) {
+                padding: 5px;
+              }
+            }
+          }
         }
       }
     }
