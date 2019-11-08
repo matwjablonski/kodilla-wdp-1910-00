@@ -288,7 +288,7 @@ header {
   }
 }
 
-@media (max-width: $sm) {
+@media (max-width: $screen-sm) {
   header {
     .top-bar {
       .text-left {
