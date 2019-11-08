@@ -1,6 +1,6 @@
 .product-box {
   background-color: $gen-white;
-  border: 1px solid #e1e1e1;
+  border: 1px solid $border-color-box;
   margin-bottom: 2rem;
 
   .photo {
@@ -41,39 +41,8 @@
       line-height: 24px;
       letter-spacing: 1px;
     }
-    .stars2 {
-      a {
-        color: $primary;
-        text-decoration: none;
-        @extend .far;
-        @extend .fa-star;
 
-        &.full {
-          @extend .fas;
-        }
-      }
-    }
-
-    .stars {
-      & a.hover {
-        color: $primary;
-        @extend .fas;
-      }
-      & a.select {
-        color: $primary;
-        @extend .fas;
-      }
-      a {
-        text-decoration: none;
-        color: rgb(42, 42, 42);
-        @extend .far;
-        @extend .fa-star;
-
-        &.full {
-          @extend .fas;
-        }
-      }
-    }
+    @include stars;
   }
 
   .line {
