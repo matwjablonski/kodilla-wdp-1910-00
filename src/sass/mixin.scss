@@ -1,0 +1,56 @@
+@mixin stars {
+  .stars,
+  .stars2 {
+    & a.hover {
+      color: $primary;
+      @extend .fas;
+    }
+    & a.select {
+      color: $primary;
+      @extend .fas;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(42, 42, 42);
+      @extend .far;
+      @extend .fa-star;
+
+      &.full {
+        @extend .fas;
+      }
+    }
+  }
+
+  .stars2 {
+    a {
+      color: $primary;
+    }
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media (max-width: $screen-sm-max) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $screen-md) and (max-width: $screen-md-max) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $screen-lg) and (max-width: $screen-lg-max) {
+      @content;
+    }
+  } @else if $media == xl {
+    @media (min-width: $screen-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin flex-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

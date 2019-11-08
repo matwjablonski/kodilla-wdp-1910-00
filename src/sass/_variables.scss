@@ -1,15 +1,25 @@
 $header-topbar-bg: #864343;
 $header-bg: #723636;
-
-$footer-claim-bg: #2a2a2a;
 $footer-bg: #363636;
-
 $primary: #d58e32;
 
-$text-color: #2a2a2a;
-
 $form-border-color: #292929;
-
 $feature-box-border-color: #b6b6b6;
+$border-color-box: #e1e1e1;
 
 $gen-white: #fff;
+$gen-black: #2a2a2a;
+
+$gallery-color-green: #00b300;
+$gallery-background-color: #f4f4f7;
+
+$cornerSize: 25px;
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
+$screen-lg-max: ($screen-xl - 1);
