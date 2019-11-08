@@ -263,21 +263,25 @@ header {
         align-items: center;
         position: relative;
 
-        input {
+        input,
+        input:focus {
           border: 0;
           padding-left: 10px;
           font-size: 14px;
           outline: none;
+          -moz-outline: none;
 
           &::placeholder {
             color: $gen-black;
           }
         }
 
-        button {
+        button,
+        button:focus {
           border: 0;
           background-color: transparent;
           outline: none;
+          -moz-outline: none;
         }
       }
     }
