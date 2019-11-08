@@ -48,7 +48,12 @@ header {
       height: 145px;
     }
 
+    .logo {
+      text-align: center;
+    }
+
     .phone-number {
+      text-align: left;
       p {
         margin: 0;
         font-size: 17px;
@@ -262,11 +267,13 @@ header {
         align-items: center;
         position: relative;
 
-        input {
+        input,
+        input:focus {
           border: 0;
           padding-left: 10px;
           font-size: 14px;
           outline: none;
+          -moz-outline: none;
           width: 100%;
 
           &::placeholder {
@@ -274,10 +281,12 @@ header {
           }
         }
 
-        button {
+        button,
+        button:focus {
           border: 0;
           background-color: transparent;
           outline: none;
+          -moz-outline: none;
         }
       }
     }
@@ -286,6 +295,43 @@ header {
 
 @media (max-width: $sm) {
   header {
+    .top-bar {
+      .text-left {
+        ul li {
+          margin-right: 0.3rem;
+        }
+      }
+
+      .text-right {
+        padding-left: 0;
+        ul li {
+          margin-left: 0.3rem;
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .company-claim {
+      .logo {
+        text-align: left;
+      }
+
+      .cart {
+        transform: translate(0px, -12px);
+      }
+
+      .phone-number {
+        order: 10;
+        min-width: 100%;
+        text-align: right;
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
     .menu-bar {
       .search-form {
         .category {
