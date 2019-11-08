@@ -2,36 +2,36 @@
   width: 1.2rem;
   opacity: 1;
   background-color: $gen-black;
-  @media (min-width: 576px) {
+  @media (min-width: $screen-sm) {
     width: 3.3rem;
   }
 }
 .carousel-control-prev {
   margin-left: -50px;
-  @media (min-width: 576px) {
+  @media (min-width: $screen-sm) {
     margin-left: -100px;
   }
 }
 
 .carousel-control-next {
   margin-right: -50px;
-  @media (min-width: 576px) {
+  @media (min-width: $screen-sm) {
     margin-right: -100px;
   }
 }
 
 .scaled {
   transform: scale(0.8);
-  @media (min-width: 400px) {
+  @media (min-width: $screen-non-std-xsm) {
     transform: scale(1);
   }
 }
 .w-adaptive {
   width: 22%;
-  @media (min-width: 576px) {
+  @media (min-width: $screen-sm) {
     width: 18%;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: $screen-xl) {
     width: 16.2%;
   }
 }
