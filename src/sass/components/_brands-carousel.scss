@@ -1,29 +1,33 @@
-.carousel-control-prev {
-  margin-left: -50px;
-  width: 1.3rem;
+.carousel-control {
+  width: 1.2rem;
   opacity: 1;
   background-color: $gen-black;
-
+  @media (min-width: 576px) {
+    width: 3.3rem;
+  }
+}
+.carousel-control-prev {
+  margin-left: -50px;
   @media (min-width: 576px) {
     margin-left: -100px;
-    width: 3.3rem;
   }
 }
 
 .carousel-control-next {
   margin-right: -50px;
-  width: 1.3rem;
-  opacity: 1;
-  background-color: $gen-black;
-
   @media (min-width: 576px) {
     margin-right: -100px;
-    width: 3.3rem;
   }
 }
 
+.scaled {
+  transform: scale(0.8);
+  @media (min-width: 400px) {
+    transform: scale(1);
+  }
+}
 .w-adaptive {
-  width: 22.2%;
+  width: 22%;
   @media (min-width: 576px) {
     width: 18%;
   }
