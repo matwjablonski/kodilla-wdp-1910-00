@@ -49,7 +49,6 @@
     }
   }
 
-
   &.active {
     i {
       background-color: $primary;
@@ -61,7 +60,6 @@
       color: $primary;
     }
   }
-
 }
 
 @media (max-width: 576px) {
