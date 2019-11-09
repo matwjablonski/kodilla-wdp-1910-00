@@ -1,3 +1,4 @@
+// Stars
 const allStars = document.querySelectorAll('.stars');
 
 for (let x of allStars) {

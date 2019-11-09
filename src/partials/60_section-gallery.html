@@ -7,86 +7,391 @@
             <div class="col heading"><h3>Furniture Gallery</h3></div>
           </div>
         </div>
-        <div class="tabs-products">
+        <div class="gallery-container">
           <div class="tabs-product">
-            <ul class="nav nav-tabs">
-              <li class="nav-item"><a class="nav-link" href="#">Featured</a></li>
+            <ul class="nav nav-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Top Seller</a>
+                <a
+                  class="nav-link"
+                  id="featured-tab"
+                  data-toggle="tab"
+                  href="#featured"
+                  role="tab"
+                  aria-controls="featured"
+                  aria-selected="false"
+                >
+                  Featured
+                </a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Sale Off</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Top Rated</a></li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="top-seller-tab"
+                  data-toggle="tab"
+                  href="#top-seller"
+                  role="tab"
+                  aria-controls="top-seller"
+                  aria-selected="true"
+                >
+                  Top Seller
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="sale-off-tab"
+                  data-toggle="tab"
+                  href="#sale-off"
+                  role="tab"
+                  aria-controls="sale-off"
+                  aria-selected="false"
+                >
+                  Sale Off
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="top-rated-tab"
+                  data-toggle="tab"
+                  href="#top-rated"
+                  role="tab"
+                  aria-controls="top-rated"
+                  aria-selected="false"
+                >
+                  Top Rated
+                </a>
+              </li>
             </ul>
           </div>
-          <div class="selected-product">
-            <img src="./images/armchair1.png" alt="armchair1" />
-            <div class="actions">
-              <div class="outlines">
-                <a
-                  href="#"
-                  class="btn-outline"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="Like"
-                >
-                  <i class="far fa-heart"></i>
-                </a>
-                <a
-                  href="#"
-                  class="btn-outline"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="Compare"
-                >
-                  <i class="fas fa-exchange-alt"></i>
-                </a>
-                <a
-                  href="#"
-                  class="btn-outline"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="View"
-                >
-                  <i class="fas fa-eye"></i>
-                </a>
-                <a
-                  href="#"
-                  class="btn-outline"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="Add To Cart"
-                >
-                  <i class="fas fa-shopping-basket"></i>
-                </a>
+          <div class="tab-content">
+            <div
+              class="tab-pane fade"
+              id="featured"
+              role="tabpanel"
+              aria-labelledby="featured-tab"
+            >
+              <div class="selected-product">
+                <img src="./images/armchair2.png" alt="armchair1" />
+                <div class="actions">
+                  <div class="outlines">
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Like"
+                    >
+                      <i class="far fa-heart"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Compare"
+                    >
+                      <i class="fas fa-exchange-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="View"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Add To Cart"
+                    >
+                      <i class="fas fa-shopping-basket"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="label-product">
+                  <div class="corner tl"></div>
+                  <div class="corner br"></div>
+                  <div class="price-product">
+                    <p>$120.00 <span>$160.00</span></p>
+                  </div>
+                  <p>Aenean Ru Bristique</p>
+                  <div class="stars">
+                    <a href="#" class="full"></a> <a href="#" class="full"></a>
+                    <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="thumbnails-products">
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link " href="#">
+                    <i class="fas fa-angle-left"></i>
+                  </a>
+                </div>
+                <div class="col gallery-item active">
+                  <img src="./images/armchair1.png" />
+                </div>
+                <div class="col gallery-item"><img src="./images/armchair2.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair3.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair4.png" /></div>
+                <div class="col gallery-item"><img src="./images/table.png" /></div>
+                <div class="col gallery-item"><img src="./images/big_bed.png" /></div>
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link" href="#">
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="label-product">
-              <div class="corner tl"></div>
-              <div class="corner br"></div>
-              <div class="price-product">
-                <p>$120.00 <span>$160.00</span></p>
+            <div
+              class="tab-pane fade show active"
+              id="top-seller"
+              role="tabpanel"
+              aria-labelledby="top-seller-tab"
+            >
+              <div class="selected-product">
+                <img src="./images/armchair1.png" alt="armchair1" />
+                <div class="actions">
+                  <div class="outlines">
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Like"
+                    >
+                      <i class="far fa-heart"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Compare"
+                    >
+                      <i class="fas fa-exchange-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="View"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Add To Cart"
+                    >
+                      <i class="fas fa-shopping-basket"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="label-product">
+                  <div class="corner tl"></div>
+                  <div class="corner br"></div>
+                  <div class="price-product">
+                    <p>$120.00 <span>$160.00</span></p>
+                  </div>
+                  <p>Aenean Ru Bristique</p>
+                  <div class="stars">
+                    <a href="#" class="full"></a> <a href="#" class="full"></a>
+                    <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                  </div>
+                </div>
               </div>
-              <p>Aenean Ru Bristique</p>
-              <div class="stars">
-                <a href="#" class="full"></a> <a href="#" class="full"></a>
-                <a href="#"></a> <a href="#"></a> <a href="#"></a>
+              <div class="thumbnails-products">
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link " href="#">
+                    <i class="fas fa-angle-left"></i>
+                  </a>
+                </div>
+                <div class="col gallery-item active">
+                  <img src="./images/armchair1.png" />
+                </div>
+                <div class="col gallery-item"><img src="./images/armchair2.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair3.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair4.png" /></div>
+                <div class="col gallery-item"><img src="./images/table.png" /></div>
+                <div class="col gallery-item"><img src="./images/big_bed.png" /></div>
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link" href="#">
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="thumbnails-products">
-            <div class="col gallery-item gallery-arrow">
-              <a class="gallery-link " href="#"> <i class="fas fa-angle-left"></i> </a>
+            <div
+              class="tab-pane fade"
+              id="sale-off"
+              role="tabpanel"
+              aria-labelledby="sale-off-tab"
+            >
+              <div class="selected-product">
+                <img src="./images/armchair3.png" alt="armchair1" />
+                <div class="actions">
+                  <div class="outlines">
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Like"
+                    >
+                      <i class="far fa-heart"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Compare"
+                    >
+                      <i class="fas fa-exchange-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="View"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Add To Cart"
+                    >
+                      <i class="fas fa-shopping-basket"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="label-product">
+                  <div class="corner tl"></div>
+                  <div class="corner br"></div>
+                  <div class="price-product">
+                    <p>$120.00 <span>$160.00</span></p>
+                  </div>
+                  <p>Aenean Ru Bristique</p>
+                  <div class="stars">
+                    <a href="#" class="full"></a> <a href="#" class="full"></a>
+                    <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="thumbnails-products">
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link " href="#">
+                    <i class="fas fa-angle-left"></i>
+                  </a>
+                </div>
+                <div class="col gallery-item active">
+                  <img src="./images/armchair1.png" />
+                </div>
+                <div class="col gallery-item"><img src="./images/armchair2.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair3.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair4.png" /></div>
+                <div class="col gallery-item"><img src="./images/table.png" /></div>
+                <div class="col gallery-item"><img src="./images/big_bed.png" /></div>
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link" href="#">
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="col gallery-item active">
-              <img src="./images/armchair1.png" />
-            </div>
-            <div class="col gallery-item"><img src="./images/armchair2.png" /></div>
-            <div class="col gallery-item"><img src="./images/armchair3.png" /></div>
-            <div class="col gallery-item"><img src="./images/armchair4.png" /></div>
-            <div class="col gallery-item"><img src="./images/table.png" /></div>
-            <div class="col gallery-item"><img src="./images/big_bed.png" /></div>
-            <div class="col gallery-item gallery-arrow">
-              <a class="gallery-link" href="#"> <i class="fas fa-angle-right"></i> </a>
+            <div
+              class="tab-pane fade"
+              id="top-rated"
+              role="tabpanel"
+              aria-labelledby="top-rated-tab"
+            >
+              <div class="selected-product">
+                <img src="./images/armchair1.png" alt="armchair1" />
+                <div class="actions">
+                  <div class="outlines">
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Like"
+                    >
+                      <i class="far fa-heart"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Compare"
+                    >
+                      <i class="fas fa-exchange-alt"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="View"
+                    >
+                      <i class="fas fa-eye"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-outline"
+                      data-toggle="tooltip"
+                      data-placement="right"
+                      title="Add To Cart"
+                    >
+                      <i class="fas fa-shopping-basket"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="label-product">
+                  <div class="corner tl"></div>
+                  <div class="corner br"></div>
+                  <div class="price-product">
+                    <p>$120.00 <span>$160.00</span></p>
+                  </div>
+                  <p>Aenean Ru Bristique</p>
+                  <div class="stars">
+                    <a href="#" class="full"></a> <a href="#" class="full"></a>
+                    <a href="#"></a> <a href="#"></a> <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="thumbnails-products">
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link " href="#">
+                    <i class="fas fa-angle-left"></i>
+                  </a>
+                </div>
+                <div class="col gallery-item active">
+                  <img src="./images/armchair1.png" />
+                </div>
+                <div class="col gallery-item"><img src="./images/armchair2.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair3.png" /></div>
+                <div class="col gallery-item"><img src="./images/armchair4.png" /></div>
+                <div class="col gallery-item"><img src="./images/table.png" /></div>
+                <div class="col gallery-item"><img src="./images/big_bed.png" /></div>
+                <div class="col gallery-item gallery-arrow">
+                  <a class="gallery-link" href="#">
+                    <i class="fas fa-angle-right"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
