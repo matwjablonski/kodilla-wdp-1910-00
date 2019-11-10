@@ -1,3 +1,5 @@
+import { tns } from './../../node_modules/tiny-slider/src/tiny-slider';
+
 // Stars
 const allStars = document.querySelectorAll('.stars');
 
@@ -36,5 +38,37 @@ for (let z of allStars) {
         action = 'remove';
       }
     }
+  });
+}
+
+const slider = tns({
+  container: '.thumbnail-slider-inner',
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  items: 6,
+  slideBy: 'page'
+});
+
+const galleryNextArrows = document.querySelectorAll(
+  '.gallery-container .gallery-arrow.next'
+);
+const galleryPrevArrows = document.querySelectorAll(
+  '.gallery-container .gallery-arrow.prev'
+);
+
+for (let galleryNextArrow of galleryNextArrows) {
+  galleryNextArrow.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    slider.goTo('next');
+  });
+}
+
+for (let galleryPrevArrow of galleryPrevArrows) {
+  galleryPrevArrow.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    slider.goTo('prev');
   });
 }

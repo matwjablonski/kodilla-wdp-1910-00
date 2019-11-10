@@ -114,43 +114,19 @@
         }
       }
 
-      .thumbnails-products {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-
-        .gallery-item {
-          position: relative;
-          background-color: $gallery-background-color;
-          margin: 5px;
-          height: 60px;
+      .thumbnail-products {
+        .thumbnail-slider {
           overflow: hidden;
-          opacity: 0.5;
+          height: 60px;
 
-          &.gallery-arrow,
-          &.active {
-            opacity: 1;
-          }
+          .gallery-item {
+            width: calc(100% / 6);
+            float: left;
 
-          &.gallery-arrow {
-            flex-grow: 0;
-            background-color: $form-border-color;
-
-            i {
-              color: $gen-white;
-              line-height: 60px;
-              position: absolute;
-              left: 12px;
+            img {
+              height: 50px;
+              width: 50px;
             }
-          }
-
-          img {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            left: 1%;
           }
         }
       }
