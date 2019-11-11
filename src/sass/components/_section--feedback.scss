@@ -1,0 +1,8 @@
+.customer-photo {
+  max-height: 80px;
+  max-width: 80px;
+}
+
+.client-type::first-letter {
+  text-transform: capitalize;
+}
