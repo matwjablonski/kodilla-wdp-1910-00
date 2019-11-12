@@ -68,17 +68,13 @@
     align-items: center;
   }
 
-  &:hover {
+  &:hover .buttons {
     @extend .hover-placeholder;
-  }
-  .buttons {
     visibility: visible;
   }
 
-  &:hover {
+  &:hover .price > .btn-main-small {
     @extend .hover-placeholder;
-  }
-  .price > .btn-main-small {
     background-color: $primary;
   }
 }
