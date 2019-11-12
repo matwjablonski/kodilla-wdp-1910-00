@@ -1,37 +1,78 @@
-.carousel-control {
-  width: 1.2rem;
-  opacity: 1;
-  background-color: $gen-black;
+.carousel-inner {
+  width: 150%;
+  margin-left: -6vw;
+
+  @media (min-width: $screen-non-std-xsm) {
+    width: 137%;
+    margin-left: -4.5vw;
+  }
+
   @media (min-width: $screen-sm) {
-    width: 3.3rem;
+    width: 140%;
+    margin-left: -50px;
+  }
+
+  @media (min-width: $screen-md) {
+    width: 130%;
+    margin-left: -50px;
+  }
+  @media (min-width: $screen-lg) {
+    width: 126%;
+    margin-left: -50px;
+  }
+  @media (min-width: $screen-xl) {
+    width: 112%;
+    margin-left: -50px;
   }
 }
+
+.carousel-control {
+  width: 1.5rem;
+  opacity: 1;
+  background-color: $gen-black;
+}
 .carousel-control-prev {
-  margin-left: -50px;
+  margin-left: -12vw;
   @media (min-width: $screen-sm) {
     margin-left: -100px;
   }
 }
 
 .carousel-control-next {
-  margin-right: -50px;
+  z-index: 1000;
+  margin-right: -11vw;
   @media (min-width: $screen-sm) {
     margin-right: -100px;
   }
 }
 
 .scaled {
-  transform: scale(0.8);
+  transform: scale(0.75);
   @media (min-width: $screen-non-std-xsm) {
     transform: scale(1);
   }
 }
 .w-adaptive {
-  width: 22%;
+  width: 20%;
   @media (min-width: $screen-sm) {
-    width: 18%;
+    width: 17.8%;
   }
   @media (min-width: $screen-xl) {
     width: 16.2%;
   }
 }
+
+.container.right-shadow {
+  box-shadow: 50px 0px 0px rgba(255, 0, 255, 1);
+}
+
+/* .px-xsm-5 {
+  @media (max-width: $screen-sm - 1px) {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  @media (min-width: $screen-sm) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+} */
