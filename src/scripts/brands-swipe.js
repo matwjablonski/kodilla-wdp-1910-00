@@ -15,9 +15,5 @@ function endX (ev) {
 }
 
 function pressArrow (direction) {
-  if (direction === 'left') {
-    document.getElementById('left').click();
-  } else if (direction === 'right') {
-    document.getElementById('right').click();
-  }
+  document.getElementById(direction).click();
 }
