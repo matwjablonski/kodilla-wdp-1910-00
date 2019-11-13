@@ -7,6 +7,9 @@
       font-weight: 500;
       .nav-tabs {
         .nav-item {
+          width: 25%;
+          text-align: center;
+
           .nav-link {
             color: $gen-black;
             border-bottom: 0;
@@ -164,6 +167,7 @@
             .gallery-overlay {
               background-color: $gallery-background-color;
               opacity: 0.5;
+              cursor: pointer;
             }
 
             img {
@@ -213,6 +217,34 @@
         background-color: $gallery-color-green;
         border-radius: 5px;
         padding: 10px 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  .featured-product {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-xl) {
+  .section--gallery {
+    .gallery-container {
+      .tabs-product {
+        .nav-tabs {
+          .nav-item {
+            width: 50%;
+          }
+        }
+      }
+
+      .tab-pane {
+        .selected-product {
+          img {
+            width: 100%;
+          }
+        }
       }
     }
   }
