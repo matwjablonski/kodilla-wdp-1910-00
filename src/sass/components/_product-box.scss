@@ -76,5 +76,6 @@
   &:hover .price > .btn-main-small {
     @extend .hover-placeholder;
     background-color: $primary;
+    cursor: pointer;
   }
 }
