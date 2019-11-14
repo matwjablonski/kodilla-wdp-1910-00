@@ -24,6 +24,7 @@ $gallery-background-color: #f4f4f7;
 
 $cornerSize: 25px;
 
+$screen-non-std-xsm: 400px;
 $screen-sm: 576px;
 $screen-md: 768px;
 $screen-lg: 992px;
@@ -31,8 +32,6 @@ $screen-xl: 1200px;
 
 $sm: $screen-sm;
 
-
 $screen-sm-max: ($screen-md - 1);
 $screen-md-max: ($screen-lg - 1);
 $screen-lg-max: ($screen-xl - 1);
- 
