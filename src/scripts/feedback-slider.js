@@ -10,7 +10,7 @@ const handlePressDot = {
   }
 };
 
-setInterval(findActive, 2000);
+setInterval(findActive, 3000);
 const mark = [];
 const points = document.getElementsByClassName('point');
 
@@ -53,6 +53,30 @@ function showFeedback (deactivateDot) {
       document.getElementById('feedback-one').classList.remove('hide-section');
       break;
   }
+}
 
-  console.log(mark.indexOf(true));
+document.getElementById('feedback').addEventListener('touchstart', startPosX);
+let clientPosX;
+let deltaPosX;
+
+function startPosX (touchEvent) {
+  clientPosX = touchEvent.touches[0].clientX;
+}
+
+document.getElementById('feedback').addEventListener('touchend', endPosX);
+
+function endPosX (touchEvent) {
+  deltaPosX = touchEvent.changedTouches[0].clientX - clientPosX;
+  deltaPosX > 0 ? moveFeedback(-1) : moveFeedback(1);
+}
+
+function moveFeedback (direction) {
+  let swiped;
+  swiped = mark.indexOf(true) + direction;
+  if (swiped === -1) {
+    swiped = 2;
+  } else if (swiped === 3) {
+    swiped = 0;
+  }
+  showFeedback(swiped);
 }
