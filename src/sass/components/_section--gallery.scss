@@ -13,6 +13,7 @@
           .nav-link {
             color: $gen-black;
             border-bottom: 0;
+            padding: 0.6rem 0;
 
             &:hover {
               color: $primary;
@@ -222,30 +223,28 @@
   }
 }
 
+@media (max-width: $screen-sm) {
+  .nav-link {
+    font-size: 11px;
+  }
+
+  .selected-product {
+    height: 300px !important;
+  }
+}
+
 @media (max-width: $screen-md) {
   .featured-product {
     display: none;
   }
 }
 
-@media (min-width: $screen-md) and (max-width: $screen-xl) {
-  .section--gallery {
-    .gallery-container {
-      .tabs-product {
-        .nav-tabs {
-          .nav-item {
-            width: 50%;
-          }
-        }
-      }
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .nav-link {
+    font-size: 13px;
+  }
 
-      .tab-pane {
-        .selected-product {
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
+  .selected-product {
+    height: 300px !important;
   }
 }
