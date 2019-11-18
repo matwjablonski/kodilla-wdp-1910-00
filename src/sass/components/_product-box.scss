@@ -1,6 +1,6 @@
 .product-box {
-  background-color: #ffffff;
-  border: 1px solid #e1e1e1;
+  background-color: $gen-white;
+  border: 1px solid $border-color-box;
   margin-bottom: 2rem;
 
   .photo {
@@ -27,12 +27,12 @@
       transform: translateX(-50%);
       background-color: #292929;
       border-radius: 50%;
-      color: #ffffff;
+      color: $gen-white;
       padding: 30px 15px 5px 15px;
     }
 
     .buttons {
-      display: flex;
+      visibility: hidden;
       justify-content: space-between;
     }
   }
@@ -48,18 +48,7 @@
       letter-spacing: 1px;
     }
 
-    .stars {
-      a {
-        text-decoration: none;
-        color: rgb(42, 42, 42);
-        @extend .far;
-        @extend .fa-star;
-
-        &.full {
-          @extend .fas;
-        }
-      }
-    }
+    @include stars;
   }
 
   .line {
@@ -90,5 +79,16 @@
       font-size: 16px;
       text-decoration: line-through;
     }
+  }
+
+  &:hover .buttons {
+    @extend .hover-placeholder;
+    visibility: visible;
+  }
+
+  &:hover .price > .btn-main-small {
+    @extend .hover-placeholder;
+    background-color: $primary;
+    cursor: pointer;
   }
 }
