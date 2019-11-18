@@ -131,6 +131,16 @@ header {
       display: flex;
       align-self: stretch;
 
+      .menu-rolled {
+        &.navbar-collapse {
+          align-items: stretch;
+        }
+      }
+
+      .navbar-toggler {
+        border: none;
+      }
+
       ul {
         margin: 0;
         padding: 0;
@@ -162,10 +172,7 @@ header {
               background-color: $primary;
               color: $gen-white;
               border-color: $primary;
-            }
-
-            &.active {
-              border-color: $gen-black;
+              border-top: 4px solid $gen-black;
             }
           }
         }
@@ -176,9 +183,7 @@ header {
       border: 1px solid $form-border-color;
       display: inline-flex;
       height: 45px;
-
       color: $gen-black;
-
       position: relative;
 
       .category {
@@ -191,6 +196,7 @@ header {
         &-cointainer {
           font-family: "PT Sans", sans-serif;
           width: 100%;
+          min-width: 171px;
           display: flex;
           align-items: center;
           height: 40px;
@@ -270,6 +276,7 @@ header {
           font-size: 14px;
           outline: none;
           -moz-outline: none;
+          width: 90%;
 
           &::placeholder {
             color: $gen-black;
@@ -288,7 +295,7 @@ header {
   }
 }
 
-@media (max-width: $sm) {
+@media (max-width: $screen-sm) {
   header {
     .top-bar {
       .text-left {
@@ -325,6 +332,62 @@ header {
         p {
           font-size: 14px;
         }
+      }
+    }
+    .menu-bar {
+      .search-form {
+        .category {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+  header {
+    .menu-bar {
+      .menu-rolled {
+        height: 84px !important;
+      }
+      .navbar-nav {
+        position: absolute;
+        background: $gen-white;
+        z-index: 1000;
+        transform: translate(0px, 84px);
+
+        li {
+          a {
+            width: 75vw;
+          }
+        }
+      }
+
+      .search-form {
+        .category-cointainer {
+          .category-list-head {
+            & li {
+              i:first-child,
+              i:nth-child(3) {
+                padding: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-xl) {
+  header {
+    .menu-bar {
+      .search-products {
+        padding-left: 0;
+      }
+
+      .container > .row {
+        height: 99px;
       }
     }
   }

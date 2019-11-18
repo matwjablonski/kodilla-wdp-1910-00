@@ -1,5 +1,7 @@
 @import "variables";
+@import "mixin";
 @import "hover-config";
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 @import "bootstrap/bootstrap.scss";
@@ -23,11 +25,15 @@
 @import "components/helpers";
 
 @import "components/brands-carousel";
+@import "components/section--feedback";
 
 @import "components/promotions";
 @import "components/helpers";
 
+@import "components/section--hotdeals";
+
 @import "components/section--features";
+@import "components/section--gallery";
 
 body {
   font-family: "Poppins", sans-serif;
