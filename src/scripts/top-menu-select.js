@@ -2,7 +2,6 @@ const allOptions = document.querySelectorAll('ul li:not(.select-first-element)')
 
 document.getElementById('select-first-element').addEventListener('click', function () {
   for (let element of allOptions) {
-    element.classList.toggle('list-element');
     element.classList.remove('selected');
   }
 });
@@ -14,8 +13,5 @@ for (let element2 of allOptions) {
     let val = e.target.innerText;
     document.getElementById('select-first-element').innerText = '';
     document.getElementById('select-first-element').innerText = `${val}`;
-    for (let element of allOptions) {
-      element.classList.add('list-element');
-    }
   });
 }
