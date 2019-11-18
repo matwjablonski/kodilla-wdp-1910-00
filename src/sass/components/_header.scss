@@ -260,6 +260,10 @@ header {
               &:hover > ul {
                 visibility: visible;
               }
+              .select-category {
+                display: inline-block;
+                width: 109px;
+              }
             }
           }
         }
