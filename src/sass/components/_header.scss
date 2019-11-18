@@ -209,6 +209,7 @@ header {
             margin: 0;
             padding: 0;
             line-height: 43px;
+            width: 100%;
             li {
               display: block;
             }
@@ -355,7 +356,6 @@ header {
         background: $gen-white;
         z-index: 1000;
         transform: translate(0px, 84px);
-
         li {
           a {
             width: 75vw;
