@@ -54,8 +54,22 @@ function initializeGalleryTab (galleryTab) {
     mouseDrag: true,
     controls: false,
     nav: false,
-    items: 6,
-    slideBy: 'page'
+    items: 3,
+    slideBy: 'page',
+    responsive: {
+      576: {
+        items: 6
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 6
+      },
+      1200: {
+        items: 6
+      }
+    }
   });
 
   const galleryNextArrows = document.querySelectorAll(

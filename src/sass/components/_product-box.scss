@@ -14,6 +14,12 @@
     overflow: hidden;
     align-items: flex-end;
 
+    img {
+      width: 100%;
+      max-width: auto;
+      height: auto;
+    }
+
     .sale {
       position: absolute;
       top: -30px;
@@ -66,19 +72,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .old-price {
+      color: #a5a5a5;
+      font-family: Poppins;
+      font-size: 16px;
+      text-decoration: line-through;
+    }
   }
 
-  &:hover {
+  &:hover .buttons {
     @extend .hover-placeholder;
-  }
-  .buttons {
     visibility: visible;
   }
 
-  &:hover {
+  &:hover .price > .btn-main-small {
     @extend .hover-placeholder;
-  }
-  .price > .btn-main-small {
     background-color: $primary;
     cursor: pointer;
   }

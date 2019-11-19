@@ -6,3 +6,7 @@
 .client-type::first-letter {
   text-transform: capitalize;
 }
+
+.hide-section {
+  display: none !important;
+}
