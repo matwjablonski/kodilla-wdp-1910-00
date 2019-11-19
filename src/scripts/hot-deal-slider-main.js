@@ -6,8 +6,8 @@ if (window.innerWidth > 900) {
     showSlides();
 
     function showSlides () {
-      let smallSlidesAll = document.querySelectorAll('.hot-deal-small-slider');
-      let slideLinks = document.querySelectorAll('.dot');
+      const smallSlidesAll = document.querySelectorAll('.hot-deal-small-slider');
+      const slideLinks = document.querySelectorAll('.dot');
       for (let element of smallSlidesAll) {
         element.classList.remove('active');
       }
