@@ -1,4 +1,6 @@
-const allOptions = document.querySelectorAll('ul li:not(.select-first-element)');
+const allOptions = document.querySelectorAll(
+  '.category-list-head li:not(.select-first-element)'
+);
 
 document.getElementById('select-first-element').addEventListener('click', function () {
   for (let element of allOptions) {
