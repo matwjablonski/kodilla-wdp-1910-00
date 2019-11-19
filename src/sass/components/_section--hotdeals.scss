@@ -46,6 +46,9 @@
       }
     }
   }
+  &.swipe {
+    display: block;
+  }
   &:hover .content .hot-deals-product-header {
     color: $primary;
   }

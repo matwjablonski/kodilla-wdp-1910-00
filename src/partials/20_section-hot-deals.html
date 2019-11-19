@@ -6,16 +6,24 @@
           <h4 class="hot-deals-topbar-header">hot deals</h4>
           <div class="hot-deals-topbar-dots">
             <ul>
-              <li><a href="#slide-one" class="dot active"></a></li>
-              <li><a href="#slide-two" class="dot"></a></li>
-              <li><a href="#slide-three" class="dot"></a></li>
+              <li><a href="#slide-one" class="dot active" data-target="1"></a></li>
+              <li><a href="#slide-two" class="dot" data-target="2"></a></li>
+              <li><a href="#slide-three" class="dot" data-target="3"></a></li>
             </ul>
           </div>
         </div>
-        <div class="product-box mb-0 hot-deal-small-slider slide active" id="slide-one">
+        <div
+          class="product-box mb-0 hot-deal-small-slider slide active"
+          id="slide-one"
+          data-value="1"
+        >
           <div class="photo">
             <div class="photo-container">
-              <img src="./images/hot-deal-armchair-1.png" class="photo-container-img" />
+              <img
+                src="./images/hot-deal-armchair-1.png"
+                class="photo-container-img"
+                data-value="1"
+              />
               <button class="btn-main-small cart">
                 <i class="fas fa-shopping-basket"></i> Add to cart
               </button>
@@ -55,7 +63,11 @@
             </div>
           </div>
         </div>
-        <div class="product-box mb-0 hot-deal-small-slider slide" id="slide-two">
+        <div
+          class="product-box mb-0 hot-deal-small-slider slide"
+          id="slide-two"
+          data-value="2"
+        >
           <div class="photo">
             <div class="photo-container">
               <img src="./images/hot-deal-armchair-2.png" class="photo-container-img" />
@@ -99,7 +111,11 @@
             </div>
           </div>
         </div>
-        <div class="product-box mb-0 hot-deal-small-slider slide" id="slide-three">
+        <div
+          class="product-box mb-0 hot-deal-small-slider slide"
+          id="slide-three"
+          data-value="3"
+        >
           <div class="photo">
             <div class="photo-container">
               <img src="./images/hot-deal-armchair-3.png" class="photo-container-img" />
@@ -149,16 +165,19 @@
             src="./images/hot-deal-furnitures-1.jpg"
             class="hot-deal-furnitures-img active"
             alt="indoor-furnitures"
+            data-value="1"
           />
           <img
             src="./images/hot-deal-furnitures-2.png"
             class="hot-deal-furnitures-img"
             alt="indoor-furnitures"
+            data-value="2"
           />
           <img
             src="./images/hot-deal-furnitures-3.png"
             class="hot-deal-furnitures-img"
             alt="indoor-furnitures"
+            data-value="3"
           />
           <div class="hot-deal-furnitures-banner">
             <h1 class="hot-deal-furnitures-banner-header">
