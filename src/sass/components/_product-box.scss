@@ -1,3 +1,16 @@
+.fade-in {
+  animation: fadein 1.7s linear forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .product-box {
   background-color: $gen-white;
   border: 1px solid $border-color-box;
@@ -19,7 +32,14 @@
       max-width: auto;
       height: auto;
     }
-
+    .tmp-who-am-i {
+      position: absolute;
+      top: 40%;
+      margin-left: 47%;
+      width: 100px;
+      font-weight: bolder;
+      color: $primary;
+    }
     .sale {
       position: absolute;
       top: -30px;
