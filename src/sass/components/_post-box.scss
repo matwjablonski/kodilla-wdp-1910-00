@@ -66,3 +66,19 @@
     }
   }
 }
+
+@media (min-width: $screen-lg) {
+  .dots {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .dots {
+    ul {
+      li:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
