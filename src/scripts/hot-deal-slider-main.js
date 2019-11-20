@@ -1,6 +1,6 @@
 'use strict';
 
-if (window.innerWidth > 900) {
+if (window.innerWidth > 991) {
   (function () {
     let slideIndex = 1;
     showSlides();
