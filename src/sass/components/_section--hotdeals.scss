@@ -3,6 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include respond-to(sm) {
+    display: none;
+  }
   &-header {
     font-size: 1rem;
     margin-bottom: 0;
@@ -38,7 +41,13 @@
     display: none;
     &.active {
       display: block;
+      @include respond-to(sm) {
+        display: none;
+      }
     }
+  }
+  &.swipe {
+    display: block;
   }
   &:hover .content .hot-deals-product-header {
     color: $primary;
@@ -65,6 +74,10 @@
         cursor: pointer;
         font-size: 0.8rem;
         display: none;
+        @include respond-to(md) {
+          left: 30%;
+          top: 40%;
+        }
       }
       .statistics-container {
         position: absolute;
@@ -98,6 +111,12 @@
   }
   .pb {
     padding: 1.1rem;
+    @include respond-to(lg) {
+      padding: 0.65rem;
+    }
+    @include respond-to(md) {
+      padding: 0.3rem;
+    }
   }
   .price-box {
     display: flex;
@@ -114,10 +133,17 @@
 .hot-deal-furnitures {
   height: 25rem;
   position: relative;
+  @include respond-to(md) {
+    height: 27rem;
+    overflow: hidden;
+  }
   &-img {
     width: 100%;
     height: auto;
     display: none;
+    @include respond-to(md) {
+      width: 141%;
+    }
     &.active {
       display: flex;
     }
@@ -129,11 +155,21 @@
     height: 35%;
     @include flex-column-center;
     background-color: rgba(0, 0, 0, 0.7);
+    @include respond-to(md) {
+      top: 35%;
+    }
+    @include respond-to(sm) {
+      top: 25%;
+      height: 25%;
+    }
     &-header,
     &-paragraph {
       color: $gen-white;
       text-transform: uppercase;
       font-weight: 400;
+      @include respond-to(sm) {
+        font-size: 1.5rem;
+      }
       span {
         font-weight: 600;
       }
@@ -141,8 +177,12 @@
     &-paragraph {
       font-size: 1.2rem;
       font-weight: 300;
+      @include respond-to(sm) {
+        font-size: 1rem;
+      }
     }
-    &-btn {
+    &-btn,
+    &-btn:focus {
       position: absolute;
       top: 87%;
       background-color: $gen-white;
@@ -151,6 +191,11 @@
       text-transform: uppercase;
       border: none;
       cursor: pointer;
+      outline: none;
+      @include respond-to(sm) {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
     }
   }
 }
