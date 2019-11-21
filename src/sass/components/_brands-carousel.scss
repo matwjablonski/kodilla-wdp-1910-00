@@ -1,6 +1,7 @@
 .carousel-inner {
   width: 150%;
   margin-left: -6vw;
+  position: relative;
 
   @media (min-width: $screen-non-std-xsm) {
     width: 137%;
@@ -69,8 +70,4 @@
   width: 7%;
   height: 12vh;
   background-color: $gen-white;
-}
-
-.carousel-inner {
-  position: relative;
 }
