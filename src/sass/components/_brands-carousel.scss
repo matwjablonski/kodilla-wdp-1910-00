@@ -68,5 +68,9 @@
   top: 0;
   width: 7%;
   height: 12vh;
-  background-color: white;
+  background-color: $gen-white;
+}
+
+.carousel-inner {
+  position: relative;
 }
