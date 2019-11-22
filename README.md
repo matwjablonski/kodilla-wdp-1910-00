@@ -21,12 +21,12 @@ After cloning repository, install required packages using command `npm install`.
 This package comes with [Parcel](https://parceljs.org/getting_started.html). The following tasks are available:
 
 - `watch` automatically rebuilds as files change
-- `build` builds project in `dist folder based on files included in`src folder
+- `build` builds project in `dist` folder based on files included in`src` folder
 - `code-quality` using [pretty-quick](https://github.com/azz/pretty-quick) and [eslint](https://eslint.org/) formats code to follow specific set of formatting rules and analyzes code to find problem in JS files.
 
 ### Git Hooks
 
-Project uses Git Hooks, in this case each time you run `git commit command the`code-quality script will check files that you selected to commit.
+Project uses Git Hooks, in this case each time you run `git commit` command the`code-quality` script will check files that you selected to commit.
 
 ## Project structure and good practices
 
@@ -40,7 +40,7 @@ All necessary to work source files are included in `src/` folder.
 - `FontAwesome` icons package folder,
 - `components` folder, which includes styles for each section,
 - `variables.scss`(includes defined all colors and sizes, variables names should clearly indicate what they relate to and should be used consistently),
-- `mixin.scss(includes all grouped CSS declarations reused throughout our application),`hover-config.scss(includes style created for hover effects used in our application)
+- `mixin.scss`(includes all grouped CSS declarations reused throughout our application),`hover-config.scss`(includes style created for hover effects used in our application)
   Please make sure to check out [XXX.md](XXX.md).
 
 4. `scripts` - contains all .js files, please make sure to check out [Scripts.md](Scripts.md).
