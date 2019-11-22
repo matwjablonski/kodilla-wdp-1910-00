@@ -33,7 +33,9 @@ Project uses Git Hooks, in this case each time you run `git commit` command the`
 All necessary to work source files are included in `src/` folder.
 
 1. `images` - contains all images used in project,
-2. `partials` - contains all .html files attached in index.html file, - each .html file includes one section, - file names start with the numbers from 10-header to 90-footer, which corresponds with position on the website.
+2. `partials` - contains all .html files attached in index.html file, 
+- each .html file includes one section, 
+- file names start with the numbers from 10-header to 90-footer, which corresponds with position on the website.
 3. `sass` - contains all .scss files attached in style.scss files divided to:
 
 - `bootstrap` styles package folder,
