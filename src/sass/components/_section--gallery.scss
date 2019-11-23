@@ -67,6 +67,7 @@
               border: 1px solid $primary;
               background-color: $gallery-background-color;
               color: $primary;
+              @extend .hover-placeholder;
             }
           }
         }
