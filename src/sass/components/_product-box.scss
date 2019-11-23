@@ -10,7 +10,10 @@
     opacity: 1;
   }
 }
-
+.product-space-between {
+  padding-right: 5px;
+  padding-left: 5px;
+}
 .product-box {
   background-color: $gen-white;
   border: 1px solid $border-color-box;
