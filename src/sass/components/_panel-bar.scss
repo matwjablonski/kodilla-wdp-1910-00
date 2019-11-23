@@ -1,6 +1,14 @@
 .panel-bar {
   margin-bottom: 30px;
-
+  @include respond-to(xl) {
+    margin-right: 50px;
+  }
+  @include respond-to(lg) {
+    margin-right: 50px;
+  }
+  @include respond-to(md) {
+    margin-right: 70px;
+  }
   .row > * {
     border-bottom: 4px solid #e2e2e2;
   }
@@ -44,6 +52,9 @@
           text-decoration: none;
           font-size: 18px;
           display: block;
+          @include respond-to(sm) {
+            font-size: 14px;
+          }
 
           &.active,
           &:hover {

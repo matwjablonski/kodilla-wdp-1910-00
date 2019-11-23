@@ -18,15 +18,15 @@
 
   .photo {
     position: relative;
+    min-height: 278px;
+    @include flex-column-center;
+    overflow: hidden;
     background: {
       color: #f4f5f7;
       size: contain;
       position: center;
       repeat: no-repeat;
     }
-    overflow: hidden;
-    align-items: flex-end;
-
     img {
       width: 100%;
       max-width: auto;
@@ -54,6 +54,8 @@
     .buttons {
       visibility: hidden;
       justify-content: space-between;
+      position: absolute;
+      bottom: 0;
     }
   }
 
@@ -110,5 +112,39 @@
     @extend .hover-placeholder;
     background-color: $primary;
     cursor: pointer;
+  }
+}
+.slideshow-container {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.tns-nav {
+  position: relative;
+  right: 0;
+  top: -39px;
+  display: flex;
+  justify-content: flex-end;
+  @include respond-to(sm) {
+    top: -20px;
+  }
+
+  button {
+    display: block;
+    width: 13px;
+    height: 13px;
+    margin: 0 0 0 10px;
+    border-radius: 6px;
+    padding: 0;
+    background-color: $border-color-box;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &.tns-nav-active,
+    &:hover {
+      background-color: $primary;
+    }
   }
 }
