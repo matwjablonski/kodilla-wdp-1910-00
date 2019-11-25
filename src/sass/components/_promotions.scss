@@ -1,15 +1,15 @@
 .left-promo {
-  height: 27vh;
+  height: 30vh;
   background-image: url("../images/promoLeft.jpg");
 }
 
 .promo-right-up {
-  height: 13.5vh;
-  background-image: url("../images/promoRightUp.jpg");
+  height: 15vh;
+  background-image: url("../images/promo-right-top.png");
 }
-.promo-right-bottom {
-  height: 13.5vh;
-  background-image: url("../images/promoRightBottom.jpg");
+.promo-bottom {
+  height: 15vh;
+  background-image: url("../images/promo-right-bottom.png");
 }
 
 .promo {
@@ -34,14 +34,22 @@
 
 .promo-bottom {
   background-color: $beige-std;
+  @include flex-column-center;
+  align-items: flex-end;
   h4 {
-    padding-top: 15%;
     font-size: 1.45rem;
     color: $primary;
+    text-align: right;
+    @include respond-to(md) {
+      font-size: 1rem;
+    }
   }
 
   h6 {
     color: $gen-black;
+    @include respond-to(md) {
+      font-size: 0.7rem;
+    }
   }
 }
 .foil-on-screen {

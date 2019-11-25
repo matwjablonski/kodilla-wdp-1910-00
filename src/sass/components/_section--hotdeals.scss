@@ -136,6 +136,9 @@
     height: 27rem;
     overflow: hidden;
   }
+  @include respond-to(sm) {
+    height: auto;
+  }
   &-img {
     width: 100%;
     height: auto;
@@ -159,7 +162,6 @@
     }
     @include respond-to(sm) {
       top: 25%;
-      height: 25%;
     }
     &-header,
     &-paragraph {

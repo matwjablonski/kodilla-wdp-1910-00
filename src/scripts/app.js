@@ -125,6 +125,135 @@ function initializeGalleryTab (galleryTab) {
   }
 }
 
+(function () {
+  tns({
+    container: '.bed-container',
+    items: 1,
+    slideBy: 'page',
+    speed: 2000,
+    controls: false,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    preventScrollOnTouch: 'auto',
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+  tns({
+    container: '.chair-container',
+    items: 1,
+    slideBy: 'page',
+    speed: 2000,
+    controls: false,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    preventScrollOnTouch: 'auto',
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+  tns({
+    container: '.sofa-container',
+    items: 1,
+    slideBy: 'page',
+    speed: 2000,
+    controls: false,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    preventScrollOnTouch: 'auto',
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+  tns({
+    container: '.table-container',
+    items: 1,
+    slideBy: 'page',
+    speed: 2000,
+    controls: false,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    preventScrollOnTouch: 'auto',
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+  tns({
+    container: '.dining-container',
+    items: 1,
+    slideBy: 'page',
+    speed: 2000,
+    controls: false,
+    autoplay: false,
+    autoplayButtonOutput: false,
+    preventScrollOnTouch: 'auto',
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
+  });
+})();
+
+
 // Section Latest blog
 const blog = tns({
   container: ' .blog-slider-container',
@@ -166,3 +295,4 @@ for (let blogDot of blogDots) {
     currentBlogDot.classList.add('active');
   });
 }
+
