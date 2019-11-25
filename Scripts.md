@@ -27,7 +27,7 @@ This script adds Tiny Slider _https://github.com/ganlanyuan/tiny-slider_ [link](
 
 **Variables**
 
-tns is the main variable used in the script that introducess Tiny Slider features.
+tns is the main variable used in the script that introduces Tiny Slider features.
 
 import { tns } from './../../node_modules/tiny-slider/src/tiny-slider'
 
@@ -96,12 +96,61 @@ The logic is common with **brands-swipe.js**
 
     function showFeedback (deactivateDot)
 
-Function findActive is responsible for seting the activePosition variable up and each 3000ms it triggers showFeedback function with arguments of active possition passed .
+Function findActive is responsible for seting the activePosition variable up and each 3000ms it triggers showFeedback function with arguments of active position passed.
 
 Function showFeedback is responsible for switching the hide-section class what actually means making
 the particular slide visible/invisible.
 
 ### hot-deal-slider-main.js
+
+**Purpose**
+
+This script adds slide show feature to Hot Deal section.
+
+**Variables**
+
+    const smallSlidesAll
+
+    This array like collections contain all elements with class hot-deal-small-slider.
+
+    const slideLinks
+
+    This array like collections contain all elements with class dot.
+
+    const slideAll
+
+    This array like collections contain all elements with class slide.
+
+**Functions**
+
+    function showSlides
+
+Function showSlides is taking care of adding and removing class active in the time interval of 3000ms to elements specified by SlideIndex counter.
+
+Script does recognize if device window is wider than 991px and in case it is not adding swipe functionalities to the code.
+
+### hot-deal-slider-side.js
+
+**Purpose**
+
+This script adds click operation to next/prev buttons.
+
+**Variables**
+
+    let slideIndex = 1
+
+    It sets up initial slide.
+
+**Functions**
+
+    function prevButton ()
+
+    function nextButton
+
+Functions above add EventListener to next/prev button that waits for click operations.
+When it happens the slideIndex is increased(next) or decreased(prev) and class active is switched to new slide that becomes active current slide.
+
+### hot-deal-swipe.js
 
 **Purpose**
 
@@ -111,29 +160,67 @@ The logic is common with **brands-swipe.js**
 
 **Variables**
 
-    const handlePressDot
+    let slideIndex;
+    let touchobj;
+    let startX = 0;
+    let dist = 0;
 
-    This Object contains all functions that are used to simulate pressing on 'dot' by mouse, that induces carousel rotation in case of user swipe activities.
+Variables shown above are used by function onStart (event) and function onMove (event).
 
-    let activePosition
+    const slides
 
-    This variables stores the position number of currebt active slide.
+Slides is array like collection that stores all elements with class hot-deal-furnitures-img.
 
 **Functions**
 
-    function findActive ()
+    function onStart (event)
 
-    function showFeedback (deactivateDot)
+    function onMove (event)
 
-Function findActive is responsible for seting the activePosition variable up and each 3000ms it triggers showFeedback function with arguments of active possition passed .
+Function onStart is setting up touchobj and startX variables.
 
-Function showFeedback is responsible for switching the hide-section class what actually means making
-the particular slide visible/invisible.
-
-### hot-deal-slider-side.js
-
-### hot-deal-swipe.js
+Function onMove is responsible for switching the active class what actually means making
+the carousel to rotate.
 
 ### section-products.js
 
+**Purpose**
+
+This script allows to select a category in New Furniture section.
+
+**Variables**
+
+    const allElements = ['bed', 'chair', 'sofa', 'table', 'dining'];
+    const elementActive = document.getElementsByClassName('fade-in');
+    const links = document.getElementsByTagName('a');
+
+allElements is an array with list of furnitures types.
+
+elementActive is a number of position of HTML element that contain fade-in class what means is currently active.
+
+links is a collection of HTML 'a' tags.
+
+**Functions**
+
+    function changeFurniture (furnitureType)
+
+Function changeFuriniture is responsible for switching d-none class and fade-in class what means making the not chosen furniture groups invisible and showing the one that was chosen.
+
 ### top-menu-select.js
+
+**Purpose**
+
+This script allows to select a category of furniture in search section.
+
+**Variables**
+
+    const allOptions
+
+allOptions stores HTML collection of all elements with class category-list-head but not li element with class select-first-element
+
+let val
+val is a value of text that represents selected group of furniture.
+
+**Method**
+
+addEventListener method changes the selected to search value to variable val value on the click on mouse event.
