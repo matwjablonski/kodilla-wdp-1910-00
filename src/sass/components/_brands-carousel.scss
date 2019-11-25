@@ -1,6 +1,7 @@
 .carousel-inner {
   width: 150%;
   margin-left: -6vw;
+  position: relative;
 
   @media (min-width: $screen-non-std-xsm) {
     width: 137%;
@@ -32,7 +33,7 @@
   background-color: $gen-black;
 }
 .carousel-control-prev {
-  margin-left: -12vw;
+  margin-left: -17vw;
   @media (min-width: $screen-sm) {
     margin-left: -100px;
   }
@@ -40,7 +41,7 @@
 
 .carousel-control-next {
   z-index: 1000;
-  margin-right: -11vw;
+  margin-right: -17vw;
   @media (min-width: $screen-sm) {
     margin-right: -100px;
   }
@@ -62,17 +63,11 @@
   }
 }
 
-.container.right-shadow {
-  box-shadow: 50px 0px 0px rgba(255, 255, 255, 1);
+.hide-flowing-imgs {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7%;
+  height: 12vh;
+  background-color: $gen-white;
 }
-
-/* .px-xsm-5 {
-  @media (max-width: $screen-sm - 1px) {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-  }
-  @media (min-width: $screen-sm) {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-} */

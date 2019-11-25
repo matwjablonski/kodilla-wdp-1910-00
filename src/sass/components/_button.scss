@@ -31,14 +31,11 @@
   font-size: 13px;
   line-height: 22px;
 
-  &:hover {
-    @extend .hover-placeholder;
-    background-color: $gen-black;
-
-    color: $gen-white;
-  }
+  &:hover,
   &.active {
-    background-color: $primary;
-    color: $gen-white;
+    border: 1px solid $primary;
+    background-color: $gen-white;
+    color: $primary;
+    @extend .hover-placeholder;
   }
 }

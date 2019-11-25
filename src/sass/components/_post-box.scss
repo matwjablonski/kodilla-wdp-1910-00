@@ -15,10 +15,15 @@
   }
 
   .cover {
+    position: relative;
     background: {
       color: #f4f5f7;
       size: cover;
       position: center;
+    }
+
+    img {
+      width: 100%;
     }
 
     .details {
@@ -26,6 +31,11 @@
       display: flex;
       background-color: $gen-white;
       font-size: 14px;
+      position: absolute;
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      bottom: 0;
 
       & > * {
         flex: 1 1 auto;
@@ -63,6 +73,29 @@
     .more {
       text-align: center;
       padding-top: 30px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .dots {
+    display: none;
+  }
+  .post-box {
+    .cover {
+      .details {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .dots {
+    ul {
+      li:nth-child(3) {
+        display: none;
+      }
     }
   }
 }
