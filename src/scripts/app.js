@@ -124,3 +124,45 @@ function initializeGalleryTab (galleryTab) {
     });
   }
 }
+
+// Section Latest blog
+const blog = tns({
+  container: ' .blog-slider-container',
+  mouseDrag: true,
+  controls: false,
+  nav: false,
+  items: 1,
+  slideBy: 'page',
+  responsive: {
+    576: {
+      items: 1
+    },
+    768: {
+      items: 2
+    },
+    992: {
+      items: 3
+    },
+    1200: {
+      items: 3
+    }
+  }
+});
+
+const blogDots = document.querySelectorAll('.blog-dots a');
+
+for (let blogDot of blogDots) {
+  blogDot.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const slideTo = e.currentTarget.getAttribute('href').replace('#', '');
+    blog.goTo(slideTo);
+
+    for (let notClickedDot of blogDots) {
+      notClickedDot.classList.remove('active');
+    }
+
+    let currentBlogDot = e.currentTarget;
+    currentBlogDot.classList.add('active');
+  });
+}
